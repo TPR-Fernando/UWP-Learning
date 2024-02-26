@@ -27,19 +27,14 @@ namespace BasicInputC_
             this.InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            textOut.Text = textToTell.Text;
-        }
+            var userInput = UserInput.Text;
 
-        private void textToTell_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            textOut.Text = textToTell.Text;
+            if (userInput != null)
+            {
+                TextOutput.Text = $"You Said: {userInput.ToUpper()}";
+            }
         }
     }
 }
