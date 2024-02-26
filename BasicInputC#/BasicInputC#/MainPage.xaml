@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="BasicInputC_.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BasicInputC_"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="textToTell" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" TextChanged="textToTell_TextChanged" Width="239" Margin="103,88,0,0"/>
+        <Button Content="Tell" Margin="378,88,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock x:Name="textOut" HorizontalAlignment="Left" Margin="103,143,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
